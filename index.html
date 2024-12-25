@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="/l_styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div id="loginForm" class="form-section">
+            <h2>Login</h2>
+            <form onsubmit="return handleLogin()">
+                <div class="input-group">
+                    <input type="text" id="login-username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Password">
+                </div>
+                <button type="submit" class="form-btn">Login</button>
+                <p id="login-error-message"></p>
+            </form>
+            <p>
+                New to Fraud Guard? 
+                <button class="toggle-btn" onclick="showRegister()">Register Here</button>
+            </p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerForm" class="form-section" style="display: none;">
+            <h2>Register</h2>
+            <form onsubmit="return handleRegister()">
+                <div class="input-group">
+                    <input type="text" id="register-username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="register-password" placeholder="Password">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="register-confirm-password" placeholder="Confirm Password">
+                </div>
+                <button type="submit" class="form-btn">Register</button>
+                <p id="register-error-message"></p>
+            </form>
+            <p>
+                Already have an account? 
+                <button class="toggle-btn" onclick="showLogin()">Login Here</button>
+            </p>
+        </div>
+    </div>
+    <script src="/l_script.js"></script>
+</body>
+</html>

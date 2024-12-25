@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('wallpapersden.com_cybersecurity-core_1927x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.form-container {
+    background-color: #b5ec9e;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-btn {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    color: #007BFF;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.form-section {
+    display: none;
+}
